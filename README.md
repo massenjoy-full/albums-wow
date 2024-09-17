@@ -7,7 +7,7 @@ Albums Wow is a simple and powerful WordPress theme designed specifically for ma
 - **Custom Post Type**: `Albums`
 - **Custom Taxonomies**: `Single` and `Genre`
 - **Metaboxes**: Add custom metadata to albums
-- **Elementor Widget**: Includes a custom widget for Elementor that allows querying albums via `WP_Query` or `WPDB` (optional)
+- **Elementor Widget**: Includes a custom widget for Elementor that allows querying albums via `WP_Query` or `wpdb` (optional)
 
 ## Installation
 
@@ -35,7 +35,7 @@ The theme includes metaboxes for the Albums custom post type, allowing you to at
 
 ## Elementor Integration
 
-Albums Wow includes a custom Elementor widget that allows you to query albums using either `WP_Query` or `WPDB` (depending on your preference). You can customize your queries dynamically through the Elementor interface to display albums based on your specified parameters.
+Albums Wow includes a custom Elementor widget that allows you to query albums using either `WP_Query` or `wpdb` (depending on your preference). You can customize your queries dynamically through the Elementor interface to display albums based on your specified parameters.
 
 ## Shortcodes
 
@@ -77,7 +77,14 @@ This shortcode uses `wpdb` for custom SQL queries to display albums. You can pas
 This will display 10 albums, sorted by title in ascending order, filtered by the "rock" genre. Filters hidden.
 
 # Gulp
-If you have made changes to styles and/or scripts - update them using the command:
+If you have made changes to styles and/or scripts:
+
+Installing the required packages:
 ```bash
 npm install
+```
+
+Updating css/js files:
+```bash
+npx gulp
 ```
