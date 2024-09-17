@@ -1,0 +1,13 @@
+.filters,
+.filters>* {
+	display: flex;
+	gap: 20px;
+}
+
+.filters>* {
+	gap: 5px;
+}
+
+.filters {
+	margin-bottom: 20px;
+}
